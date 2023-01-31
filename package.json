@@ -1,20 +1,33 @@
 {
-  "name": "react-ag-grid",
-  "version": "0.0.1",
+  "name": "@saadreact/commonreactggrid",
+  "version": "0.1.7",
   "description": "A common react typescript ag grid library",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "saashah",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.20.12",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^11.0.0",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.27",
+    "babel-loader": "^8.3.0",
     "react": "^18.2.0",
     "rollup": "^3.10.1",
     "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^4.9.4"
   },
   "main": "dist/cjs/index.js",
@@ -22,5 +35,13 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/saadreact"
+  },
+  "dependencies": {
+    "ag-grid-community": "^29.0.0",
+    "ag-grid-react": "^29.0.0",
+    "react-dom": "^18.2.0"
+  }
 }

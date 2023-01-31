@@ -1,12 +1,20 @@
 import React from 'react';
+import './Button.css';
 
 interface ButtonProps {
-    label:string;
+   onClick: () => void;
+   children?: React.ReactNode;
 }
 
-const Button = (props:ButtonProps) => {
+const Button:React.FC<ButtonProps> = (props) => {
+  const {children} = props;
+
   return (
-    <button>{props.label}</button>
+    <button 
+    {...props}
+  >
+  {children}
+  </button>
   )
 }
 
