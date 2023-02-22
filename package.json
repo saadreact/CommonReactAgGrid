@@ -1,6 +1,6 @@
 {
   "name": "@saadreact/commonreactggrid",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "description": "A common react typescript ag grid library",
   "scripts": {
     "rollup": "rollup -c",
@@ -40,8 +40,6 @@
     "registry": "https://npm.pkg.github.com/saadreact"
   },
   "dependencies": {
-    "ag-grid-community": "^29.0.0",
-    "ag-grid-react": "^29.0.0",
     "react-dom": "^18.2.0"
   }
 }
