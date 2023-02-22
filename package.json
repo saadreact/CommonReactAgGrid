@@ -1,6 +1,6 @@
 {
-  "name": "@saadreact/commonreactggrid",
-  "version": "0.1.9",
+  "name": "commonreactgrid",
+  "version": "1.2.3",
   "description": "A common react typescript ag grid library",
   "scripts": {
     "rollup": "rollup -c",
@@ -9,6 +9,10 @@
   },
   "author": "saashah",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saadreact/commonreactggrid"
+  },
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@rollup/plugin-commonjs": "^24.0.1",
@@ -24,7 +28,6 @@
     "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.27",
     "babel-loader": "^8.3.0",
-    "react": "^18.2.0",
     "rollup": "^3.10.1",
     "rollup-plugin-dts": "^5.1.1",
     "rollup-plugin-postcss": "^4.0.2",
@@ -36,10 +39,8 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/saadreact"
-  },
-  "dependencies": {
+  "peerDependencies": {
+    "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
 }

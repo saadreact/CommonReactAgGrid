@@ -1,18 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 interface ButtonProps {
    onClick?: () => void;
-   children?: React.ReactNode;
 }
 
 const Button:React.FC<ButtonProps> = (props) => {
-  const {children} = props;
+  const [name, setName] = useState("Click me");
 
   return (
     <button 
     {...props}
   >
-  {children}
+  {name}
   </button>
   )
 }
